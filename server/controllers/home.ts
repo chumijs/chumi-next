@@ -6,7 +6,7 @@ import home from "../services/home";
 export default class {
   home = loadService(home);
 
-  @Get("/")
+  @Get("/chumi")
   async index(@Query("name") name: string) {
     return `hello ${name || "world"}` + (await this.home.index());
   }

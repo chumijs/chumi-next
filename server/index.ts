@@ -11,6 +11,14 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = new Koa();
 
+  server.use(async (ctx, next) => {
+    await next();
+    if (ctx.status === 404) {
+      await handle(ctx.req, ctx.res);
+      ctx.respond = false;
+    }
+  });
+
   // 业务
   server.use(
     chumi(controllers, {
@@ -36,11 +44,6 @@ app.prepare().then(() => {
       },
     })
   );
-
-  server.use(async (ctx, next) => {
-    await handle(ctx.req, ctx.res);
-    ctx.respond = false;
-  });
 
   // if (import.meta.env.PROD) {
   // 编译后，生产环境运行的服务端口
