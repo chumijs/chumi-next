@@ -590,15 +590,17 @@ chokidar@^3.5.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-chumi@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.npmmirror.com/chumi/-/chumi-0.0.10.tgz#8436613273470436ee99881275edc01ca7a95381"
-  integrity sha512-mSexMBuojubO7AM6Itm0D0Zp4JCIr1P/uzWMhdwJEPfAE21QTnWLTWCAqpkj49fO1BBTdD30EW8bPp7xyD8tsA==
+chumi@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/chumi/-/chumi-1.0.5.tgz#075e173e89f3a3cb90ce83a96d9be0873601372f"
+  integrity sha512-FD5gNWVfT1RZpGWxN4d6teASnT4OP19Xc1Do4XijLFfWwqtURRgQs1YDUJdeoD+vANCCQOa40xa5KppXuEpkWw==
   dependencies:
+    "@types/koa" "^2.13.5"
     koa "^2.14.1"
     koa-body "^5.0.0"
     koa-compose "^4.1.0"
     koa-router "^10.1.1"
+    swagger-ui-dist "^4.18.0"
 
 client-only@0.0.1:
   version "0.0.1"
@@ -2473,6 +2475,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+swagger-ui-dist@^4.18.0:
+  version "4.18.0"
+  resolved "https://registry.npmjs.org/swagger-ui-dist/-/swagger-ui-dist-4.18.0.tgz#e5435ad0bfb983629476d2959604cafa633673d5"
+  integrity sha512-PZeF7r+JsAXC8tEGatOARSEeC0n3ChGqTDcbZUzrV+mGnlW2ZEystlpiEyMWfAY4FAT+uxibfMuRahEvnoG3CQ==
 
 synckit@^0.8.4:
   version "0.8.5"

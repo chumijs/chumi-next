@@ -29,6 +29,7 @@ app.prepare().then(() => {
           maxFileSize: 20000 * 1024 * 1024 * 10, // 设置上传文件大小最大限制，默认200M
         },
       },
+      swagger: {},
       onFinish: (ctx) => {
         console.log("finish", ctx.path, +new Date() - ctx.startTime + "ms");
       },
